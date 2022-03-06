@@ -22,7 +22,126 @@ Note for text colors:
 - Font size: 13px
 
 ### Font
+font-family: 'Barlow Semi Condensed', sans-serif;
 
 - Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
 - Weights: 500, 600
  */
+* {
+  background-color: #ecf2f8;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.card__container {
+  display: grid;
+}
+.card__img {
+  float: left;
+  position: static;
+  border-radius: 50%;
+  width: 15%;
+}
+.card__h4 {
+  float: left;
+  margin-top: -40px;
+  margin-left: 50px;
+  margin-bottom: 0;
+  font-size: 13px;
+  font-weight: 600;
+  
+}
+.card--verified {
+  background-color: transparent;
+  float: left;
+  margin-top: -25px;
+  margin-left: 50px;
+  font-size: 13px;
+  font-size: 13px;
+  opacity: 50%;
+}
+.card__h3 {
+  background-color: transparent;
+  font-size: 17px;
+}
+.card__p {
+  font-size: 13px;
+  opacity: 70%;
+  line-height: 20px;
+}
+.card__content--daniel {
+  background-color: #7541c8;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #cfcfcf;
+}
+.card__content--jonathan {
+  background-color: #48556a;
+  color: #cfcfcf;
+}
+.card__content--jeanette {
+  background-color: 	#ffffff;
+  color: #48556a;
+}
+.card__content--patrick {
+  background-color: #19212e;
+  color: #cfcfcf;
+}
+.card__content--kira {
+  background-color: #ffffff;
+  color: #48556a;
+}
+.attribution {
+  color: #48556a;
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.attribution__link {
+  text-decoration: none;
+  color: #48556a;
+}
+.attribution__link:hover {
+  color: 	#3e52a3;
+}
+@media only screen and (max-width: 375px) {
+
+  .main__container {
+    width: 300px; 
+    margin: 0 auto; 
+  }
+
+  .card__container {
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+  
+  }
+}
+@media only screen and (max-width: 1440px) {
+
+  .main-container {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 300px 50px 50px;
+    column-gap: 20px;
+  }
+  .card__container {
+    margin: 0 auto;
+  }
+  .card__img {
+    width: 45px;
+    margin: 20px;
+  }
+  .card__h4 {
+    margin-top: -60px;
+    margin-left: 80px;
+    margin-bottom: 0;
+  }
+  .card--verified {
+    margin-top: -45px;
+    margin-left: 80px;
+  }
+  .card__content {
+    margin: 20px;
+  }
+}
+  
